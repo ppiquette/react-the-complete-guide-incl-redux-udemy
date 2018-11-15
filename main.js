@@ -72,8 +72,8 @@ class Person extends Human {
 
 
 // Instantiation of a class
-person = new Person();
-person.printStuff();
+let somebody = new Person();
+somebody.printStuff();
 
 
 //
@@ -82,7 +82,7 @@ person.printStuff();
 
 // Need to compile the code with Babel first. You can run the compiler in command line, or make transpiling
 // a part of your build process (using Gulp, Grunt, WebPack, etc.).
-// In webstorm: https://blog.jetbrains.com/webstorm/2015/05/ecmascript-6-in-webstorm-transpiling/
+// In WebStorm: https://blog.jetbrains.com/webstorm/2015/05/ecmascript-6-in-webstorm-transpiling/
 
 import any_name from "./defaultexport.js";
 any_name();
