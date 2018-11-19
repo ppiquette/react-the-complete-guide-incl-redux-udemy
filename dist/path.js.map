@@ -1,0 +1,1 @@
+{"version":3,"sources":["../node_modules/babel-polyfill/node_modules/regenerator-runtime/path.js"],"names":["exports","require"],"mappings":";;AAAAA,OAAO,CAAPA,IAAAA,GAAeC,OAAO,CAAPA,MAAO,CAAPA,CAAAA,IAAAA,CAAAA,SAAAA,EAAfD,YAAeC,CAAfD","sourcesContent":["exports.path = require(\"path\").join(\n  __dirname,\n  \"runtime.js\"\n);\n"],"file":"path.js"}

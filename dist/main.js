@@ -6,6 +6,8 @@ var _export_items_individually = require("./export_items_individually");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -30,19 +32,25 @@ function regularFunction() {
 }
 
 regularFunction(); //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
 // NextGen Javascript functionality
 //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // let and const
 //
-// Standard Javascript variable
+
+console.log("*** let and const ***"); // Standard Javascript variable
 
 var regular_javascript_variable = 67; // New syntax but like var
 
 var same_as_var = 67; // as it names suggested, constant
 
-var could_not_be_changed = 67; //
-// Arrow function
+var could_not_be_changed = 67; //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Arrow Functions
 //
+
+console.log("\n*** Arrow Functions ***");
 
 var printMyName = function printMyName(name) {
   console.log(name);
@@ -62,10 +70,22 @@ var squared_short = function squared_short(number) {
   return Math.pow(number, 2);
 };
 
-console.log(squared_short(same_as_var)); //
+console.log(squared_short(same_as_var)); //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Export and Import (between files)
+//
+// Need to compile the code with Babel first. You can run the compiler in command line, or make transpiling
+// a part of your build process (using Gulp, Grunt, WebPack, etc.).
+// In WebStorm: https://blog.jetbrains.com/webstorm/2015/05/ecmascript-6-in-webstorm-transpiling/
+
+console.log("\n*** Export and Import (between files) ***");
+(0, _defaultexport.default)();
+(0, _export_items_individually.myFunction)(_export_items_individually.myConstant); //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Classes
 //
-// very similar to javascript function instantiation (whatever it is)
+// very similar to javascript function instantiation
+// (for more details https://medium.com/dailyjs/instantiation-patterns-in-javascript-8fdcf69e8f9b)
+
+console.log("\n*** Classes ***");
 
 var Human = // required
 function Human() {
@@ -93,8 +113,8 @@ function (_Human) {
   _createClass(Person, [{
     key: "printStuff",
     value: function printStuff() {
-      console.log(this.name);
-      console.log(this.sex);
+      console.log("Name is", this.name);
+      console.log("Sex is", this.sex);
     }
   }]);
 
@@ -103,13 +123,26 @@ function (_Human) {
 
 
 var somebody = new Person();
-somebody.printStuff(); //
-// export and import
+somebody.printStuff(); //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Modern Syntax for Properties and Functions in Classes
 //
-// Need to compile the code with Babel first. You can run the compiler in command line, or make transpiling
-// a part of your build process (using Gulp, Grunt, WebPack, etc.).
-// In WebStorm: https://blog.jetbrains.com/webstorm/2015/05/ecmascript-6-in-webstorm-transpiling/
 
-(0, _defaultexport.default)();
-(0, _export_items_individually.myFunction)(_export_items_individually.myConstant);
+console.log("\n*** Modern Syntax for Properties and Functions in Classes ***"); // Modern syntax introduced in ES7 for defining:
+//  - variable outside of a constructor() function with no "this"
+//  - class functions using arrow functions
+
+var PersonNew = function PersonNew() {
+  var _this2 = this;
+
+  _classCallCheck(this, PersonNew);
+
+  _defineProperty(this, "name", 'Jerry');
+
+  _defineProperty(this, "printStuff", function () {
+    console.log("Name is", _this2.name);
+  });
+};
+
+var somebody_else = new PersonNew();
+somebody_else.printStuff();
 //# sourceMappingURL=main.js.map

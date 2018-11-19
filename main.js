@@ -6,12 +6,20 @@ function regularFunction(){
 regularFunction()
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// NextGen Javascript functionality
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
+// NextGen Javascript functionality
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // let and const
 //
+console.log("*** let and const ***")
 
 // Standard Javascript variable
 var regular_javascript_variable = 67;
@@ -22,9 +30,14 @@ let same_as_var = 67;
 // as it names suggested, constant
 const could_not_be_changed = 67;
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Arrow Functions
 //
-// Arrow function
-//
+console.log("\n*** Arrow Functions ***")
+
 const printMyName = (name) => {
     console.log(name)
 };
@@ -43,16 +56,38 @@ const squared_short = number => Math.pow(number, 2);
 console.log(squared_short(same_as_var));
 
 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Export and Import (between files)
 //
+// Need to compile the code with Babel first. You can run the compiler in command line, or make transpiling
+// a part of your build process (using Gulp, Grunt, WebPack, etc.).
+// In WebStorm: https://blog.jetbrains.com/webstorm/2015/05/ecmascript-6-in-webstorm-transpiling/
+console.log("\n*** Export and Import (between files) ***")
+
+import any_name from "./defaultexport.js";
+any_name();
+
+import {myConstant} from "./export_items_individually";
+import {myFunction} from "./export_items_individually";
+myFunction(myConstant);
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Classes
 //
 
-// very similar to javascript function instantiation (whatever it is)
+// very similar to javascript function instantiation
+// (for more details https://medium.com/dailyjs/instantiation-patterns-in-javascript-8fdcf69e8f9b)
+console.log("\n*** Classes ***")
 
 class Human {
     // required
     constructor(){
-        this.sex = "M"
+        this.sex = "M";
     }
 
 }
@@ -61,32 +96,38 @@ class Person extends Human {
     constructor(){
         // need to call constructor of parent like in Python
         super();
-        this.name = "BillyBob"
+        this.name = "BillyBob";
     }
 
     printStuff() {
-        console.log(this.name)
-        console.log(this.sex)
+        console.log("Name is", this.name);
+        console.log("Sex is", this.sex);
     }
 }
-
-
 // Instantiation of a class
 let somebody = new Person();
 somebody.printStuff();
 
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Modern Syntax for Properties and Functions in Classes
 //
-// export and import
-//
+console.log("\n*** Modern Syntax for Properties and Functions in Classes ***")
 
-// Need to compile the code with Babel first. You can run the compiler in command line, or make transpiling
-// a part of your build process (using Gulp, Grunt, WebPack, etc.).
-// In WebStorm: https://blog.jetbrains.com/webstorm/2015/05/ecmascript-6-in-webstorm-transpiling/
+// Modern syntax introduced in ES7 for defining:
+//  - variable outside of a constructor() function with no "this"
+//  - class functions using arrow functions
+class PersonNew {
+    name = 'Jerry';
 
-import any_name from "./defaultexport.js";
-any_name();
+    printStuff = () => {
+        console.log("Name is", this.name);
+    }
+}
 
-import {myConstant} from "./export_items_individually";
-import {myFunction} from "./export_items_individually";
-myFunction(myConstant);
+let somebody_else = new PersonNew();
+somebody_else.printStuff();
+

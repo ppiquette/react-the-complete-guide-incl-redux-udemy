@@ -1,0 +1,1 @@
+{"version":3,"sources":["../node_modules/babel-runtime/core-js/math/sinh.js"],"names":["module","require","__esModule"],"mappings":";;AAAAA,MAAM,CAANA,OAAAA,GAAiB;AAAE,aAAWC,OAAO,CAApB,8BAAoB,CAApB;AAAsDC,EAAAA,UAAU,EAAE;AAAlE,CAAjBF","sourcesContent":["module.exports = { \"default\": require(\"core-js/library/fn/math/sinh\"), __esModule: true };"],"file":"sinh.js"}

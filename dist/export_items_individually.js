@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.myConstant = exports.myFunction = void 0;
 
 var myFunction = function myFunction(value) {
-  console.log("function exported");
+  console.log("I'm single function exported");
   return value;
 };
 

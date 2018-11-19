@@ -1,5 +1,5 @@
 const party = () => {
-    console.log("I'm default exported")
+    console.log("I'm default exported");
 };
 
 export default party;

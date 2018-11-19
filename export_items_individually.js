@@ -1,5 +1,5 @@
 export const myFunction = (value) => {
-    console.log("function exported");
+    console.log("I'm single function exported");
     return value;
 };
 

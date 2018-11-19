@@ -1,0 +1,1 @@
+{"version":3,"sources":["../node_modules/babel-runtime/helpers/_self-global.js"],"names":["module","exports","require"],"mappings":";;AAAAA,MAAM,CAACC,OAAP,GAAiBC,OAAO,CAAC,iBAAD,CAAxB","sourcesContent":["module.exports = require(\"./selfGlobal.js\");"],"file":"_self-global.js"}
