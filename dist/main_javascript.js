@@ -195,4 +195,45 @@ var _name$age = {
 console.log(name); // it seems that the syntax for
 //   array is []
 //   objects is {}
-//# sourceMappingURL=main.js.map
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// References and primitive type
+// (not modern javascript, just very useful)
+//
+
+console.log("\n*** References and primitive type ***"); // PRIMITIVE: a primitive type is like an int, a bool
+
+var num = 1; // is a primitive type
+
+var num2 = num; //creates a copy of the content of num
+
+num2 = 2;
+console.log(num2); // REFERENCE: objects and array are references
+
+var object1 = {
+  name: "Pat",
+  sex: "M"
+};
+var object2 = object1;
+object2.name = "Sophie";
+console.log(object1); // both object1 an object2 get changed because they point to the same space in memory
+// if we spread an object while creating another one, we are now making a copy of it
+
+var object3 = _objectSpread({}, object1);
+
+object3.name = "Albert";
+console.log(object1); // it stays with the Sophie name, object3 occupies another space in memory
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Array functions
+//
+
+console.log("\n*** Array functions ***");
+var array = [1, 2, 3]; // array function are executed on each element or the array
+// each element is put in the "num" variable below and can be manipulated in the execution part of the array function
+// (between the {})
+// in that case the map return a new array (it is not a reference as above)
+
+var t = array.map(function (num) {
+  return num * 2;
+});
+console.log(t);
+//# sourceMappingURL=main_javascript.js.map

@@ -131,3 +131,96 @@ class PersonNew {
 let somebody_else = new PersonNew();
 somebody_else.printStuff();
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Spread and Rest operators
+//
+console.log("\n*** Spread and Rest operators ***");
+
+// spread is something like the split function in python but more general, not just for list (I think)
+const old_array = ["test", "patate"];
+const new_array = [...old_array, "bleh", "fruits"];
+console.log("spread and concatenate: ", new_array);
+
+// the rest variant of the same ... is really like the * operator in python functions
+const any_number_of_parameters_function = (...args) => {
+    return args.sort()
+};
+console.log("rested: ", any_number_of_parameters_function(4, 2, 6, 7, 9));
+
+// the ... operator can also expend a Javascript "object". An object seems to be a simple container or properties
+// (kind of a C struct)
+
+const old_obj = {
+    name: "Patrick",
+    age: 44
+};
+
+const new_obj = {...old_obj, size: 'L'};
+
+console.log("pread and concatenate object:", new_obj);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Destructuring
+//
+console.log("\n*** Destructuring ***");
+
+// very similar to Python unpacking
+// it uses the array symbol [] but a and b are not in an array
+let [a, b] = ["Jesus", "Saint-Esprit"];
+console.log("a: ", a, "b: ", b);
+
+// same thing for properties in object. Here, only name is pulled.
+let {name} = {name: "Eric", age:"22"};
+console.log(name);
+
+
+// it seems that the syntax for
+//   array is []
+//   objects is {}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// References and primitive type
+// (not modern javascript, just very useful)
+//
+console.log("\n*** References and primitive type ***");
+
+// PRIMITIVE: a primitive type is like an int, a bool
+let num = 1;  // is a primitive type
+let num2 = num; //creates a copy of the content of num
+num2 = 2;
+console.log(num2);
+
+
+// REFERENCE: objects and array are references
+let object1 = {
+    name: "Pat",
+    sex: "M"
+};
+let object2 = object1;
+object2.name = "Sophie";
+console.log(object1); // both object1 an object2 get changed because they point to the same space in memory
+
+// if we spread an object while creating another one, we are now making a copy of it
+let object3 = {...object1};
+object3.name = "Albert";
+console.log(object1); // it stays with the Sophie name, object3 occupies another space in memory
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Array functions
+//
+console.log("\n*** Array functions ***");
+
+let array = [1,2,3];
+// array function are executed on each element or the array
+// each element is put in the "num" variable below and can be manipulated in the execution part of the array function
+// (between the {})
+// in that case the map return a new array (it is not a reference as above)
+let t = array.map((num) => {
+    return num * 2;
+});
+console.log(t);
+
+
+
