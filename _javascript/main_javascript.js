@@ -223,4 +223,3 @@ let t = array.map((num) => {
 console.log(t);
 
 
-

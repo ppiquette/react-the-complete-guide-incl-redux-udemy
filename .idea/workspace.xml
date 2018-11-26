@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="881dfa33-8a0a-494a-a3d3-ec0e35736354" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main_react.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main_javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-destructuring/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-destructuring/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/defaultexport.js" beforeDir="false" afterPath="$PROJECT_DIR$/_javascript/defaultexport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main_javascript.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main_javascript.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_items_individually.js" beforeDir="false" afterPath="$PROJECT_DIR$/_javascript/export_items_individually.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/_javascript/main_javascript.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,26 +51,26 @@
     <session id="951452024">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.3" value="5" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="babelrc" value="2" />
           <entry key="gitignore" value="29" />
-          <entry key="js" value="4751" />
+          <entry key="js" value="5178" />
           <entry key="json" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="32" />
-          <entry key="JavaScript" value="4751" />
+          <entry key="JavaScript" value="5178" />
           <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
@@ -78,7 +78,7 @@
         <counts>
           <entry key="babelrc" value="1" />
           <entry key="gitignore" value="3" />
-          <entry key="js" value="7" />
+          <entry key="js" value="9" />
           <entry key="json" value="5" />
           <entry key="old_config_in_js_format" value="1" />
           <entry key="ts" value="1" />
@@ -87,7 +87,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="9" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -97,31 +97,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main_javascript.js">
+        <entry file="file://$PROJECT_DIR$/main_react.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="220" column="3" selection-start-line="220" selection-start-column="3" selection-end-line="220" selection-end-column="3" />
+            <state relative-caret-position="60">
+              <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
               <folding>
-                <element signature="e#1917#1972#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/defaultexport.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_items_individually.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -158,6 +140,8 @@
         <option value="$PROJECT_DIR$/defaultexport.js" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/main_javascript.js" />
+        <option value="$PROJECT_DIR$/_javascript/main_javascript.js" />
+        <option value="$PROJECT_DIR$/main_react.js" />
       </list>
     </option>
   </component>
@@ -654,10 +638,10 @@
       <path value="$PROJECT_DIR$/node_modules/wrappy/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1376" />
+    <option name="width" value="1680" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -665,6 +649,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -672,11 +657,15 @@
               <item name="react-the-complete-guide-incl-redux-udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-the-complete-guide-incl-redux-udemy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-the-complete-guide-incl-redux-udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-the-complete-guide-incl-redux-udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="_javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -687,6 +676,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_javascript" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -731,12 +725,13 @@
       <workItem from="1542575532935" duration="3834000" />
       <workItem from="1542581676913" duration="3503000" />
       <workItem from="1542900541776" duration="298000" />
-      <workItem from="1542937289823" duration="4104000" />
+      <workItem from="1542937289823" duration="4450000" />
+      <workItem from="1543197877781" duration="978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20007000" />
+    <option name="totallyTimeSpent" value="21331000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,16 +743,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="987" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.110910185" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.110910185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31284916" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31284916" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -827,26 +822,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/export_items_individually.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/defaultexport.js">
+    <entry file="file://$PROJECT_DIR$/_javascript/defaultexport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_javascript.js">
+    <entry file="file://$PROJECT_DIR$/_javascript/export_items_individually.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="220" column="3" selection-start-line="220" selection-start-column="3" selection-end-line="220" selection-end-column="3" />
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_javascript/main_javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="212" column="36" selection-start-line="212" selection-start-column="36" selection-end-line="212" selection-end-column="36" />
           <folding>
             <element signature="e#1917#1972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
